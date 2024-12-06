@@ -22,3 +22,11 @@ $age = 28;
 /* echo "My name is Siaedil Basar";
 echo "\n";
 echo "I am a university student"; */
+
+//variable access
+function displayTemperature(){
+    global $temperature;
+    echo "\nToday temperature value is: ".$temperature;
+}
+
+displayTemperature();
