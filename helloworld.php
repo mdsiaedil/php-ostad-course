@@ -30,3 +30,28 @@ function displayTemperature(){
 }
 
 displayTemperature();
+
+class Test {
+    public $weather = "Cold"; // Class property
+    public $price = 10;
+
+    function weatherValue() {
+        // Use $this->weather to access the class property
+        return $this->weather;
+    }
+}
+
+$weatherObj = new Test();
+echo "\n";
+
+echo "The direct access value is: ".$weatherObj ->weather;
+// Call the method to access the `weather` property
+$myVal = $weatherObj->weatherValue();
+echo "\nFunction value is: " . $myVal;
+
+// Update the `weather` property
+$weatherObj->weather = "Hot";
+echo "\n";
+echo $weatherObj->weather;
+
+
